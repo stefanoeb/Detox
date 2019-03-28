@@ -8,6 +8,10 @@ class APKPath {
     const originalApkPathObj = path.parse(originalApkPath);
     let tempPath = originalApkPathObj.dir.split(path.sep);
     const splitFileName = originalApkPathObj.name.split('-');
+    
+    if (tempPath.includes('bitrise')) {
+      return path.join(tempPath.join(path.sep), `${originalApkPathObj.name}-androidTest${originalApkPathObj.ext}`);
+    }
 
     const buildType = _.last(splitFileName);
     const flavorDimensions = _.slice(splitFileName, 1, splitFileName.length - 1);
