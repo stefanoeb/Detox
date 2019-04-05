@@ -120,7 +120,7 @@ class Detox {
       throw new DetoxRuntimeError({
         message: `Invalid test summary was passed to detox.beforeEach(testSummary)` +
           '\nExpected to get an object of type: { title: string; fullName: string; status: "running" | "passed" | "failed"; }',
-        hint: 'Maybe you are still using an old undocumented signature detox.beforeEach(string, string, string) in init.js ?' +
+        hint: 'Maybe you\'re still using an old undocumented signature detox.beforeEach(string, string, string) in init.js ?' +
           '\nSee the article for the guidance: ' +
           'https://github.com/wix/detox/blob/master/docs/APIRef.TestLifecycle.md',
         debugInfo: `testSummary was: ${util.inspect(testSummary)}`,

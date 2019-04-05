@@ -1,13 +1,13 @@
 {
-  "name": "detox",
+  "name": "detox-8fit",
   "description": "E2E tests and automation for mobile",
-  "version": "12.1.1",
+  "version": "12.1.2",
   "bin": {
     "detox": "local-cli/cli.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wix/Detox.git"
+    "url": "https://github.com/stefanoeb/Detox.git"
   },
   "nativePackage": true,
   "bugs": {
